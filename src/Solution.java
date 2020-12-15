@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 class Solution {
@@ -10,18 +9,18 @@ class Solution {
         int k = n;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < k; j++) {
-                System.out.print(' ');
+                System.out.print("  ");
             }
             int x = i;
             while (x > 0){
-                System.out.print((x--));
+                System.out.print((x--)+" ");
             }
             int y = 0;
             while (y <= i){
-                System.out.print((y++));
+                System.out.print((y++)+" ");
             }
             for (int j = 0; j < k; j++) {
-                System.out.print(' ');
+                System.out.print("  ");
             }
             System.out.println();
             k--;
